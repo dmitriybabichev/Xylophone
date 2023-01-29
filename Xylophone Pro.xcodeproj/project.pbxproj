@@ -13,6 +13,13 @@
 		18014EFF29862C43008891FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18014EFD29862C43008891FB /* Main.storyboard */; };
 		18014F0129862C43008891FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18014F0029862C43008891FB /* Assets.xcassets */; };
 		18014F0429862C43008891FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18014F0229862C43008891FB /* LaunchScreen.storyboard */; };
+		18014F1329862EEB008891FB /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F0C29862EEB008891FB /* A.wav */; };
+		18014F1429862EEB008891FB /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F0D29862EEB008891FB /* C.wav */; };
+		18014F1529862EEB008891FB /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F0E29862EEB008891FB /* B.wav */; };
+		18014F1629862EEB008891FB /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F0F29862EEB008891FB /* F.wav */; };
+		18014F1729862EEB008891FB /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F1029862EEB008891FB /* G.wav */; };
+		18014F1829862EEB008891FB /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F1129862EEB008891FB /* E.wav */; };
+		18014F1929862EEB008891FB /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18014F1229862EEB008891FB /* D.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		18014F0029862C43008891FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18014F0329862C43008891FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18014F0529862C43008891FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18014F0C29862EEB008891FB /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		18014F0D29862EEB008891FB /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		18014F0E29862EEB008891FB /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		18014F0F29862EEB008891FB /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		18014F1029862EEB008891FB /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		18014F1129862EEB008891FB /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		18014F1229862EEB008891FB /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +77,23 @@
 				18014F0029862C43008891FB /* Assets.xcassets */,
 				18014F0229862C43008891FB /* LaunchScreen.storyboard */,
 				18014F0529862C43008891FB /* Info.plist */,
+				18014F0B29862EEB008891FB /* Sounds */,
 			);
 			path = "Xylophone Pro";
+			sourceTree = "<group>";
+		};
+		18014F0B29862EEB008891FB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				18014F0C29862EEB008891FB /* A.wav */,
+				18014F0D29862EEB008891FB /* C.wav */,
+				18014F0E29862EEB008891FB /* B.wav */,
+				18014F0F29862EEB008891FB /* F.wav */,
+				18014F1029862EEB008891FB /* G.wav */,
+				18014F1129862EEB008891FB /* E.wav */,
+				18014F1229862EEB008891FB /* D.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +154,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18014F1729862EEB008891FB /* G.wav in Resources */,
 				18014F0429862C43008891FB /* LaunchScreen.storyboard in Resources */,
+				18014F1629862EEB008891FB /* F.wav in Resources */,
 				18014F0129862C43008891FB /* Assets.xcassets in Resources */,
+				18014F1329862EEB008891FB /* A.wav in Resources */,
+				18014F1529862EEB008891FB /* B.wav in Resources */,
+				18014F1829862EEB008891FB /* E.wav in Resources */,
+				18014F1929862EEB008891FB /* D.wav in Resources */,
 				18014EFF29862C43008891FB /* Main.storyboard in Resources */,
+				18014F1429862EEB008891FB /* C.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.babichev.Xylophone-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.babichev.Xylophone-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
